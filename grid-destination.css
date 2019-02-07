@@ -1,0 +1,56 @@
+.grid-destination {
+	max-width: 1425px;
+	margin: auto;
+	padding: 0 140px;
+}
+
+.grid-destination .row-destination {
+	display: grid;
+	grid-template-columns: 25% 25% 50%;
+}
+
+.grid-destination .row-destination .destination-single {
+	margin-right: 30px;
+    margin-bottom: 25px;
+	border-radius: 5px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 250px;
+	background-size: cover;
+	background-position: center;
+	transition: all 0.2s;
+}
+.grid-destination .row-destination .destination-single:hover {
+	transform: translate(0px, -4px);
+	transition: all 0.2s;
+	box-shadow: 0 22px 40px rgba(0, 0, 0, 0.1);
+}
+.grid-destination .row-destination .destination-single a {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+} 
+.grid-destination .row-destination .destination-single h3 {
+	position: absolute;
+	color: white;
+	z-index: 2;
+	font-size: 24px;
+	margin: 0;
+}
+.grid-destination .row-destination .destination-single span {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 5px;
+}
+.grid-destination .row-destination .destination-double {
+	border: 1px solid black;
+	margin-bottom: 25px;
+}
