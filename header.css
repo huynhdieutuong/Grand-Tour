@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+/* Layout */
+.container {
+	max-width: 1235px;
+	margin: auto;
+	padding: 0 90px;
+}
+
+.header {
+	color: white;
+	display: flex;
+}
+
+/* Logo */
+.header .logo {
+	flex: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header .logo img {
+	width: 92px;
+	height: 22px;
+	margin-right: 40px;
+}
+.header .logo .search {
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 50px;
+	height: 34px;
+	padding: 0 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+}
+.header .logo .search input {
+	padding: 10px;
+	background-color: rgba(0,0,0,0);
+	border-color: rgba(0,0,0,0);
+	width: 228px;
+	color: white;
+	font-size: 14px;
+}
+.header .logo .search input::placeholder {
+	color: rgba(200,200,200,0.7);
+}
+.header .logo .search input:focus {
+	outline: none;
+}
+
+/* Menu */
+.header .menu {
+	flex: 60%;
+	display: flex;
+	justify-content: flex-end;
+}
+.header .menu ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+}
+.header .menu ul > li a {
+	text-decoration: none;
+	color: white;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 27px 12px;
+	margin-right: 3px;
+	display: block;
+}
+.header .menu .sub-menu > a::after {
+	font-family: "Font Awesome 5 Free";
+	content: "\f107";
+	margin-left: 5px;
+}
+
+.header .menu .cart {
+	padding: 25px 0;
+	font-size: 13px;
+	margin-left: 15px;
+}
+.header .menu .cart i {
+	position: relative;
+}
+.header .menu .cart i span {
+	position: absolute;
+	top: -12px;
+	right: -12px;
+	font-size: 10px;
+	padding: 2px 4px;
+	background-color: #1C58F6;
+	border-radius: 8px;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Sub Menu */
+.header .menu .sub-menu {
+	position: relative;
+}
+.header .menu .sub-menu > ul {
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: 10;
+	top: 65px;
+	box-shadow: 0 5px 40px rgba(0, 0, 0, 0.15);
+	opacity: 0;
+	z-index: -1;
+	transform: scale(0.8);
+	transition: all 0.2s;
+}
+.header .menu .sub-menu:hover > ul {
+	transform: scale(1);
+	opacity: 1;
+	z-index: 10;
+}
+.header .menu .sub-menu > ul li a {
+	border-bottom: 1px solid #dce0e0;
+	color: black;
+	padding: 15px 0;
+	margin: 0 20px;
+	display: block;
+	width: 200px;
+}
+.header .menu .sub-menu > ul .sub-menu2 > a::after {
+	font-family: "Font Awesome 5 Free";
+	content: "\f105";
+	float: right;
+}
+.header .menu .sub-menu > ul li a:hover {
+	color: #1C58F6;
+}
+
+/* Sub Menu 2 */
+.header .menu .sub-menu > ul .sub-menu2 {
+	position: relative;
+	transition: all 0.2s;
+}
+.header .menu .sub-menu > ul .sub-menu2 ul {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: -241px;
+	top: 0;
+	z-index: 10;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	border-radius: 5px;
+	box-shadow: 0 5px 40px rgba(0, 0, 0, 0.15);
+	transform: scale(0.8);
+	opacity: 0;
+	z-index: -1;
+	transition: all 0.2s;
+}
+.header .menu .sub-menu > ul .sub-menu2:hover ul {
+	transform: scale(1);
+	opacity: 1;
+	z-index: 10;
+}
+.header .menu .cart .ti-menu {
+	display: none;
+}
+
+/* Banner */
+.banner {
+	position: relative;
+	top: -80px;
+	z-index: -2;
+}
+.banner img {
+	width: 100%;
+}
+
+/* Responsive Layout */
+@media (max-width: 767px) {
+	.container {
+		padding: 0 10px;
+	}
+}
+@media (max-width: 1099px) and (min-width: 768px) {
+	.container {
+		padding: 0 30px;
+	}
+}
+
+/* Responsive Menu */
+@media (max-width: 945px) {
+	.header .menu ul {
+		display: none;
+	}
+	.header .menu .cart .ti-menu {
+		display: inline-block;
+		margin-right: 15px;
+	}
+	.header .menu .cart .ti-menu a {
+		color: white;
+		font-size: 13px;
+	}
+}
+@media (max-width: 1200px) and (min-width: 945px) {
+	.header .logo .search input {
+		width: 117px;
+	}
+}
+@media (max-width: 767px) and (min-width: 480px) {
+	.header .logo .search input {
+		width: 170px;
+	}
+}
+@media (max-width: 480px) {
+	.header .logo .search input {
+		width: 60px;
+	}
+}

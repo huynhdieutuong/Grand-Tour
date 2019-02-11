@@ -5,40 +5,81 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="./grid-destination.css">
 	<link rel="stylesheet" type="text/css" href="./grid-tour.css">
+	<link rel="stylesheet" type="text/css" href="./header.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+	<!-- Header -->
+	<div class="container header">
+		<div class="logo">
+			<a href="#"><img src="./images/logo.png"></a>
+			<form class="search">
+				<i class="fas fa-search"></i>
+				<input type="text" placeholder="Search tour by keywords">
+			</form>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li class="sub-menu"><a href="#">Booking</a>
+					<ul>
+						<li class="sub-menu2"><a href="#">Online Payment for Booking</a></li>
+						<li><a href="#">Custom Booking Form</a></li>
+						<li class="sub-menu2"><a href="#">Tour Durations</a>
+							<ul>
+								<li><a href="#">Single Day Tour</a></li>
+								<li><a href="#">Multible Days Tour</a></li>
+							</ul>
+						</li>
+						<li class="sub-menu2"><a href="#">Custom Booking URL for Affiliate Tour</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Tours</a></li>
+				<li><a href="#">Destination</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<div class="cart">
+				<span class="ti-menu"><a href="#"><i class="fas fa-bars"></i></a></span>
+				<i class="fas fa-shopping-cart"><span>0</span></i>
+			</div>
+		</div>
+	</div>
+
+	<div class="banner"><img src="./images/banner/pexels-photo-210243.jpeg"></div>
+	<!-- End Header -->
+
 	<!-- Grid Destination -->
 	<div class="container grid-destination">
 		<div class="row row-reverse">
-			<div class="destination-single end-row" style="background-image: url(http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandtour/demo2/wp-content/uploads/2017/07/pexels-photo-479344-700x466.jpeg);">
+			<div class="destination-single end-row" style="background-image: url(./images/pexels-photo-479344-700x466.jpeg);">
 				<span></span>
 				<a href="#"></a>
 				<h3>Asia</h3>
 			</div>
-			<div class="destination-single" style="background-image: url(http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandtour/demo2/wp-content/uploads/2016/12/pexels-photo-525906-700x466.jpeg);">
+			<div class="destination-single" style="background-image: url(./images/pexels-photo-525906-700x466.jpeg);">
 				<span></span>
 				<a href="#"></a>
 				<h3>South America</h3>
 			</div>
-			<div class="destination-single destination-double" style="background-image: url(http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandtour/demo2/wp-content/uploads/2016/12/pexels-photo-481795-960x636.jpeg);">
+			<div class="destination-single destination-double" style="background-image: url(./images/pexels-photo-481795-960x636.jpeg);">
 				<span></span>
 				<a href="#"></a>
 				<h3>North America</h3>
 			</div>
 		</div>
 		<div class="row">
-			<div class="destination-single" style="background-image: url(http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandtour/demo2/wp-content/uploads/2016/12/H2O-Tours-australia-700x466.jpg);">
+			<div class="destination-single" style="background-image: url(./images/H2O-Tours-australia-700x466.jpg);">
 				<span></span>
 				<a href="#"></a>
 				<h3>Australia</h3>
 			</div>
-			<div class="destination-single" style="background-image: url(http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandtour/demo2/wp-content/uploads/2016/12/Beautiful-Africa-700x466.jpg);">
+			<div class="destination-single" style="background-image: url(./images/Beautiful-Africa-700x466.jpg);">
 				<span></span>
 				<a href="#"></a>
 				<h3>Africa</h3>
 			</div>
-			<div class="destination-single destination-double end-row" style="background-image: url(http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandtour/demo2/wp-content/uploads/2016/12/erik-lundqvist-220582-960x636.jpg);">
+			<div class="destination-single destination-double end-row" style="background-image: url(./images/erik-lundqvist-220582-960x636.jpg);">
 				<span></span>
 				<a href="#"></a>
 				<h3>Europe</h3>
@@ -53,7 +94,7 @@
 			<div class="tour-component">
 				<div class="tour-img">
 					<a href="#"></a>
-					<img src="http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandtour/demo2/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg">
+					<img src="./images/tours/1600x1200-4-700x466.jpg">
 					<span class="price">$5,000</span>
 				</div>
 				<div class="tour-info">
@@ -69,7 +110,7 @@
 				<div class="tour-img">
 					<a href="#"></a>
 					<span class="sale">Sale</span>
-					<img src="http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandtour/demo2/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg">
+					<img src="./images/tours/pexels-photo-92658-700x466.jpeg">
 					<span class="price has-discount"><span>$6,000</span>$5,000</span>
 				</div>
 				<div class="tour-info">
@@ -84,7 +125,7 @@
 			<div class="tour-component">
 				<div class="tour-img">
 					<a href="#"></a>
-					<img src="http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandtour/demo2/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg">
+					<img src="./images/tours/Tokyo_Dollarphotoclub_72848283-copy-700x466.jpg">
 					<span class="price has-discount"><span>$6,000</span>$5,000</span>
 				</div>
 				<div class="tour-info">
@@ -99,7 +140,7 @@
 			<div class="tour-component end-tour">
 				<div class="tour-img">
 					<a href="#"></a>
-					<img src="http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandtour/demo2/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg">
+					<img src="./images/tours/jerome-prax-60091-700x466.jpg">
 					<span class="price">$5,000</span>
 				</div>
 				<div class="tour-info">
@@ -116,7 +157,7 @@
 			<div class="tour-component">
 				<div class="tour-img">
 					<a href="#"></a>
-					<img src="http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandtour/demo2/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg">
+					<img src="./images/tours/114303_iStock-488433476-Hero-700x466.jpg">
 					<span class="price">$5,000</span>
 				</div>
 				<div class="tour-info">
@@ -132,7 +173,7 @@
 				<div class="tour-img">
 					<a href="#"></a>
 					<span class="sale">Sale</span>
-					<img src="http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandtour/demo2/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg">
+					<img src="./images/tours/hong-kong-700x466.jpg">
 					<span class="price has-discount"><span>$6,000</span>$5,000</span>
 				</div>
 				<div class="tour-info">
@@ -147,7 +188,7 @@
 			<div class="tour-component">
 				<div class="tour-img">
 					<a href="#"></a>
-					<img src="http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandtour/demo2/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg">
+					<img src="./images/tours/ming-jun-tan-121082-700x466.jpg">
 					<span class="price has-discount"><span>$6,000</span>$5,000</span>
 				</div>
 				<div class="tour-info">
@@ -162,7 +203,7 @@
 			<div class="tour-component end-tour">
 				<div class="tour-img">
 					<a href="#"></a>
-					<img src="http://themegoodsthemes-pzbycso8wng.stackpathdns.com/grandtour/demo2/wp-content/uploads/2016/12/1600x1200-4-700x466.jpg">
+					<img src="./images/tours/prague_hero-700x466.jpg">
 					<span class="price">$5,000</span>
 				</div>
 				<div class="tour-info">
