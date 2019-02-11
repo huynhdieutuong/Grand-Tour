@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="./grid-tour.css">
 	<link rel="stylesheet" type="text/css" href="./header.css">
 	<link rel="stylesheet" type="text/css" href="./text-subscribe.css">
+	<link rel="stylesheet" type="text/css" href="./tour-search.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
@@ -49,6 +50,56 @@
 
 	<div class="banner"><img src="./images/banner/pexels-photo-210243.jpeg"></div>
 	<!-- End Header -->
+
+	<!-- Tour Search -->
+	<div class="container tour-search">
+		<form>
+			<div class="row-search">
+				<div class="col-search">
+					<input type="text" placeholder="Destination, city">
+					<span><i class="fas fa-search"></i></span>
+				</div>
+				<div class="col-search">
+					<select>
+			    		<option value="">Any Month</option><option value="january">January</option><option value="february">February</option><option value="march">March</option><option value="april">April</option><option value="may">May</option><option value="june">June</option><option value="july">July</option><option value="august">August</option><option value="september">September</option><option value="october">October</option><option value="november">November</option><option value="december">December</option>
+					</select>
+					<span><i class="fas fa-calendar-week"></i></span>
+				</div>
+				<div class="col-search">
+					<select>
+						<option value="date">Sort By Date</option><option value="price_low">Price Low to High</option><option value="price_high">Price High to Low</option><option value="name">Sort By Name</option><option value="popular">Sort By Popularity</option><option value="review">Sort By Review Score</option>
+					</select>
+					<span><i class="fas fa-exchange-alt fa-rotate-90"></i></span>
+				</div>
+				<div class="col-search search-btn end">
+					<input type="submit" value="Search">
+				</div>
+			</div>
+			<div class="row-search">
+				<div class="col-search">
+					<select>
+		    			<option value="">All Categories</option><option value="mountain">Mountain</option><option value="rural">Rural</option><option value="snow-ice">Snow &amp; Ice</option><option value="wildlife">Wildlife</option>
+		    		</select>
+		    		<span><i class="fas fa-angle-down"></i></span>
+				</div>
+				<div class="col-search">
+					<select>
+		    			<option value="">Any Destinations</option><option value="289">Africa</option><option value="292">Asia</option><option value="291">Australia</option><option value="287">Europe</option><option value="294">North America</option><option value="293">South America</option>
+		    		</select>
+		    		<span><i class="fas fa-angle-down"></i></span>
+				</div>
+				<div class="col-search">
+					<input type="text" placeholder="Max budget ex. 500">
+					<span>$</span>
+				</div>
+
+			</div>
+			<div class="row-search">
+				<div class="col-search advanced-search"><i class="fas fa-angle-up"></i>Advanced Search</div>
+			</div>
+		</form>
+	</div>
+	<!-- End Tour Search -->
 
 	<!-- Grid Destination -->
 	<div class="container grid-destination">
