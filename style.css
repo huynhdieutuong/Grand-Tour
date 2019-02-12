@@ -1,0 +1,19 @@
+/* To Top */
+.to-top a i {
+	color: white;
+	line-height: 45px;
+}
+.to-top a {
+	width: 45px;
+	height: 45px;
+	display: block;
+	background-color: #1C58F6;
+	border-radius: 25px;
+	text-align: center;
+}
+.to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	z-index: 20;
+}
